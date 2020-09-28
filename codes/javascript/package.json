@@ -1,0 +1,25 @@
+{
+  "name": "coding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "kwonmory",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.0.1",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.3",
+    "@types/jest-plugin-context": "^2.9.3",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest-plugin-context": "^2.9.0"
+  }
+}

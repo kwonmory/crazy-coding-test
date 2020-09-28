@@ -41,3 +41,17 @@ java test report를 통해서 UI적으로 테스트 결과를 보면서 테스�
 
 - 처음 저장소를 클론 할 경우, java 디렉토리 위치에서 `mvn install`을 실행하여 의존성 다운받기
 - `maven`이 설치 되어있어야함, maven이 설치되어있는지 `mvn --version` 으로 확인 할 것
+
+## Tip
+
+```java
+// Integer to int
+Arrays.stream(a).mapToInt(Integer::intValue).toArray();
+```
+
+```java
+// List 정렬하기
+List<Integer> data = new ArrayList<>();
+
+Collections.sort(data);
+```

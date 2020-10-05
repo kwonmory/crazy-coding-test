@@ -59,3 +59,7 @@ test.each([
 ])('미로 탐색', (n, m, map, ans) => {
   expect(solution(n, m, map)).toBe(ans);
 });
+
+/*
+  https://www.acmicpc.net/problem/2178
+*/

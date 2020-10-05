@@ -35,3 +35,7 @@ test.each([
 ])('한수', (n, ans) => {
   expect(solution(n)).toEqual(ans);
 });
+
+/*
+  https://www.acmicpc.net/problem/1065
+*/

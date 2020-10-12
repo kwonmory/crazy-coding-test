@@ -1,4 +1,4 @@
-function solution(numbers) {
+const solution = (numbers) => {
   const set = new Set();
 
   for (let i = 0; i < numbers.length - 1; i += 1) {
@@ -8,7 +8,7 @@ function solution(numbers) {
   }
 
   return [...set.values()].sort((a, b) => a - b);
-}
+};
 
 test.each([
   [[2, 1, 3, 4, 1], [2, 3, 4, 5, 6, 7]],
@@ -16,3 +16,7 @@ test.each([
 ])('두개뽑아서더하기', (n, ans) => {
   expect(solution(n)).toEqual(ans);
 });
+
+/*
+  https://programmers.co.kr/learn/courses/30/lessons/68644
+*/

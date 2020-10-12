@@ -1,18 +1,20 @@
 const solution = (n, k) => {
-  let copyN = n;
-  let result = 0;
+  let answer = 0;
 
-  while (copyN !== 1) {
-    result += 1;
+  while (true) {
+    if (n <= 1) break;
+    
+    answer += 1;
 
-    if (copyN % k === 0) {
-      copyN %= k;
+    if (n % k === 0) {
+      n = Math.floor(n / k);
       continue;
     }
-    copyN -= 1;
+
+    n -= 1;
   }
 
-  return result;
+  return answer;
 };
 
 test.each([
